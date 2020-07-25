@@ -1,0 +1,260 @@
+.html,body {
+    height: auto;
+}
+.section {
+    text-align:center;
+    font-size: 3em;
+    width: 100%;
+    height: auto;
+    min-width: 100vh;
+    width: 100%;
+    height: 100%;
+    background: url('images/back.png') no-repeat;
+    color: #e43875;
+    position: relative;
+}
+.content{
+    margin: 50px;
+}
+.nav-info {
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+.nav-logo {
+    width: 180px;
+    height: 36px;
+}
+.nav-title {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 42px;
+    display: block;
+    float: right;
+    position: relative;
+    text-align: center;
+}
+.list-menu {
+    padding: 4px 0;
+    line-height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 140px;
+    margin-left: -20px;
+    display: none;
+    box-shadow: -1px 1px 6px 2px #c5c5c5;
+}
+.nav-title span:last-child {
+    margin-right: 0;
+}
+.go-buy {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 62px;
+    /* display: inline-block; */
+    float: right;
+    /* position: relative; */
+    /* padding: 8px 16px; */
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    background: #e43875;
+}
+.pageone {
+    /* width: 100%;
+    height: 100%;
+    background: url('images/back.png') no-repeat; */
+    background-size: cover;
+    position: relative;
+    z-index: 1001;
+}
+.priva-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    /* z-index: 1000; */
+    opacity: 0.6;
+}
+.arrow-style {
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+}
+.one-style {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.one-desc {
+    font-size: 54px;
+}
+.pageone-img {
+    width: 188px;
+    margin-top: 62px;
+    /* height: 378px; */
+}
+.font-desc {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 72px 200px 0 200px;
+    text-align: justify;
+}
+.fullimg-size {
+    width: 100%;
+    height: 100%;
+}
+.fullimg-about {
+    background: url('images/about.png') no-repeat;
+    background-size: 100%;
+}
+.fullimg-uni {
+    background: url('images/uniswapx.png') no-repeat;
+    background-size: 100% 100%;  
+}
+.fullimg-swa {
+    background: url('images/swapxchain.png') no-repeat;
+    background-size: 100% 100%;  
+}
+.have-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 36px 0px;
+}
+.swapx-desc {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.have-padding {
+    padding-top: 40px;
+}
+.fullimg-coming {
+    background: url('images/comming.png') no-repeat;
+    background-size: 100% 100%;  
+}
+.coming-btn {
+    font-size: 20px;
+    font-weight: 600;
+    width: 180px;
+    margin: 20px auto 0 auto;
+    height: 60px;
+    line-height: 60px;
+    border: 1.5px solid #e43875;
+    border-radius: 30px;
+}
+/* token ma~~~页面 */
+.fullimg-combo {
+    background: url('images/combo.png') no-repeat;
+}
+.combo-page {
+    width: 1370px;
+    position: relative;
+    margin: 0 auto
+}
+.combo-desc {
+    font-size: 20px;
+    line-height: 32px;
+    width: 610px;
+    text-align: left;
+    margin-top: 40px;
+}
+.small-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-left: -20px;
+}
+.private-style {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1001;
+    text-align: left;
+}
+.combo-img {
+    width: 630px;
+    height: 320px;
+}
+
+/* 合作伙伴 */
+.fullimg-partner {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background: url('images/partner.png') no-repeat;
+    background-size: 100%;
+}
+.img-partner {
+    width: 80%;
+    /* height: 216px; */
+    margin-top: 120px;
+}
+
+/* join us 页面 */
+.fullimg-join {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+.full-horse {
+    height: 100%;
+    width: 100%;
+    background: url('images/joinus.png') no-repeat;
+    background-size: 100% 100%;  
+}
+.join-word {
+    /* width: 610px;
+    height: 66px; */
+    width: 182px;
+    height: 50px;
+    margin-bottom: 48px;
+}
+.img-icon {
+    width: 50px;
+    height: 50px;
+}
+.padding-round {
+    margin: 0 34px;
+}
+.footer {
+    width: 46px;
+    height: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+.footer-img {
+    width: 46px;
+    height: 20px;
+}
+
+a,a:visited {
+    color: black;
+    text-decoration: none !important;
+}
+.nav-title:hover, a:hover {
+    color: #e43875;
+}
+.list-title {
+    position: relative;
+    width: 50px;
+}
