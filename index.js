@@ -13,10 +13,17 @@ new fullpage('#fullpage', {
     },
 
 });
-var daojishi = null
+var daojishi = null;
+var padTime = null;
 var middle = document.querySelector('#productfather');
+var middleSecond = document.querySelector('#padfather');
+var closeIcon = document.querySelector('.arrow-down');
+var openIcon = document.querySelector('.arrow-up')
 middle.addEventListener('mouseover',hoverEvent);
-middle.addEventListener('mouseout',hoverEventTwo)
+middle.addEventListener('onclick',hoverEvent);
+middle.addEventListener('mouseout',hoverEventTwo);
+middleSecond.addEventListener('mouseover',hoverEvents);
+middleSecond.addEventListener('mouseout',levelEvent);
 function hoverEvent() {
     if (daojishi) {
         clearTimeout(daojishi);
@@ -27,6 +34,18 @@ function hoverEvent() {
 function hoverEventTwo() {
     daojishi = setTimeout(() => {
         document.querySelector('.list-menu').style.display = 'none';
+    },400);
+}
+function hoverEvents() {
+    if (padTime) {
+        clearTimeout(padTime);
+        padTime = null;
+    }
+    document.querySelector('.list-menu-second').style.display = 'block';
+}
+function levelEvent() {
+    padTime = setTimeout(() => {
+        document.querySelector('.list-menu-second').style.display = 'none';
     },400);
 }
 function goPage() {
