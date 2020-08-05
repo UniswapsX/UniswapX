@@ -1,7 +1,7 @@
 var thisIndex = 0; //所处页面
 
 new fullpage('#fullpage', {
-    anchors: ['homepage', 'about', 'uniswapx', 'swapxchain','gamex','token','partner','joinus'],
+    anchors: ['homepage', 'about', 'uniswapx', 'mensaearn','gamex','token','partner','joinus'],
     // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
     responsiveHeight: 410,
     // navigation: true,
