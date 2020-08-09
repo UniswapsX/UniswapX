@@ -89,7 +89,7 @@ function toDate(time) {
     })
     return ret
 }
-let targetDate = new Date(1597320000000)
+let targetDate = new Date(1597492800000)
 
 function updateContent() {
     let {
