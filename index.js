@@ -1,6 +1,6 @@
 var thisIndex = 0; // 所处页面
 let contractUrl = ''
-// let targetDate = new Date(Date.now() + 5000)
+// let targetDate = new Date(Date.now() + 5000) 
 let targetDate = new Date(1597492800000)
 let countDownTime = 0
 let raiseInfo = document.querySelector('.raise-info')
@@ -18,11 +18,11 @@ function updateInfo (data) {
   countInfo.innerText = transformThou(data.tokencount)
   rateInfo.innerText = data.layerexchangerate
   raiseInfo.innerText = transformThou(data.amountraised)
-  if(data.layer>=42){
+  if(data.layer>42){
     awardInfo.innerText = Number((data.amountraised * 0.05).toFixed(4))
   }
-  if(!step2Interval && data.layer>=42){
-    document.querySelector('.blur').classList.remove('blur')
+  if(!step2Interval && data.layer>42){
+    document.querySelector('blur').classList.remove('blur')
     step2Interval = setInterval(updateStep2Content, 1000)
   }
 }
@@ -176,7 +176,7 @@ function updateContent () {
   })
 }
 function updateStep2Content () {
-  let { days, hours, minutes, seconds } = toDate(lastUserTime - Date.now())
+  let { days, hours, minutes, seconds } = toDate(lastUserTime*1000 - Date.now())
   hours = String(days * 24 + +hours).padStart(2, '0')
   let time = hours + minutes + seconds
   let intervalItems = document.querySelectorAll('.count-down-item')
