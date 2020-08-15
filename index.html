@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MensaProtocol</title>
     <!-- <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" /> -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">   
     <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="./dist/clipboard.min.js"></script>
+    <script src="./dist/qrcode.min.js"></script>
   </head>
   <body>
+    <div class="copy-tips"></div>
     <div class="nav-info">
       <a href="#interval">
         <img class="nav-logo" src=images/head-logo.png alt="">
@@ -115,27 +121,73 @@
                 raised more than 1ETH.
               </p>
             </div>
-            <div class="one-desc">START IN</div>
-            <div class="interval-content">
+            <div class="one-desc first-step">START IN</div>
+            <div class="interval-content first-step">
               <div class="interval-group">
                 <div class="interval-group-item">0</div>
                 <div class="interval-group-item">0</div>
-                <!-- <p>DAY</p> -->
               </div>
               <div class="interval-group">
                 <div class="interval-group-item">0</div>
                 <div class="interval-group-item">0</div>
-                <!-- <p>HOURS</p> -->
               </div>
               <div class="interval-group">
                 <div class="interval-group-item">0</div>
                 <div class="interval-group-item">0</div>
-                <!-- <p>MINUTES</p> -->
               </div>
               <div class="interval-group">
                 <div class="interval-group-item">0</div>
                 <div class="interval-group-item">0</div>
-                <!-- <p>SECONDS</p> -->
+              </div>
+            </div>
+            <div class="hash-content second-step">
+              <span id="hash">
+                0x76723091F62642C923447047956fd3364e4f98F2
+              </span>
+              <button class="copy-btn" data-clipboard-target="#hash"><img src="./images/copy.png"><span>Copy</span></button>
+              <button class="qrcode"><img src="./images/qrcode.png"><span>QR Code</span>
+                <div id="qrcode"></div>
+              </button>
+            </div>
+            <div class="contract-info second-step">
+              <div class="base-info info-panel">
+                <div class="current-info info-item">
+                  <div class="info-title">Current exchange ratio</div>
+                  <div class="info-content">1ETH:<span class="rate-info">0</span>MST</div>
+                </div>
+                <div class="total-info">
+                  <div class="info-item">
+                    <div class="info-title">MST Generated</div>
+                    <div class="info-content count-info">0</div>
+                  </div>
+                  <div class="info-item">
+                    <div class="info-title">ETH Received</div>
+                    <div class="info-content raise-info">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="count-down info-panel blur">
+                <div class="count-down-content">
+                  <div class="count-down-group">
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-desc">HOURS</div>
+                  </div>
+                  <div class="count-down-group">
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-desc">MINUTES</div>
+                  </div>
+                  <div class="count-down-group">
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-item">0</div>
+                    <div class="count-down-desc">SECOND</div>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-title">Dao+Reward</div>
+                  <div class="info-content"><span class="award-info">0</span>ETH</div>
+                </div>
               </div>
             </div>
           </div>
