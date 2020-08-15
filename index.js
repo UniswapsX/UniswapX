@@ -1,7 +1,7 @@
 var thisIndex = 0; // 所处页面
 let contractUrl = ''
-// let targetDate = new Date(Date.now() + 5000)
-let targetDate = new Date(1597492800000)
+let targetDate = new Date(Date.now() + 5000)
+// let targetDate = new Date(1597492800000)
 let countDownTime = 0
 let raiseInfo = document.querySelector('.raise-info')
 let awardInfo = document.querySelector('.award-info')
@@ -18,6 +18,7 @@ function updateInfo (data) {
   countInfo.innerText = transformThou(data.tokencount)
   rateInfo.innerText = data.layerexchangerate
   raiseInfo.innerText = transformThou(data.amountraised)
+  lastUserTime = data.lastusertime
   if(data.layer>=42){
     awardInfo.innerText = Number((data.amountraised * 0.05).toFixed(4))
   }
