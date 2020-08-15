@@ -1,7 +1,7 @@
 var thisIndex = 0; // 所处页面
 let contractUrl = ''
-let targetDate = new Date(Date.now() + 5000)
-// let targetDate = new Date(1597492800000)
+// let targetDate = new Date(Date.now() + 5000)
+let targetDate = new Date(1597492800000)
 let countDownTime = 0
 let raiseInfo = document.querySelector('.raise-info')
 let awardInfo = document.querySelector('.award-info')
